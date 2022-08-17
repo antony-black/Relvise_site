@@ -1,0 +1,53 @@
+@import '_variebles';
+@import '_media';
+@import '_header';
+@import '_services';
+@import '_advantages';
+@import '_practice';
+@import '_whoweare';
+@import '_clients';
+@import '_subscribe';
+@import '_getintouch';
+@import '_contact';
+@import '_footer';
+
+
+
+
+body{
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: $color-1;
+  background: $color-6;
+}
+
+a{
+  color: inherit;
+}
+
+button{
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  max-width: 1066px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: 550px) {
+  .box-content__title{
+    font-size: 30px;
+  }
+}

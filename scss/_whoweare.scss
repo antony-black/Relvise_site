@@ -1,0 +1,149 @@
+.whoweare {
+  padding-bottom: 100px;
+  background: $color-3;
+
+  &__content-box {
+
+    &:not(:last-child){
+      margin-bottom: 100px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__video-popup {
+    flex: 0 1 60%;
+    background: url('../img/whoweare-bg.jpg') top center/cover no-repeat;
+  }
+
+  &__descr {
+    flex: 0 1 40%;
+    padding-left: 50px;
+  }
+
+  &__descr-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 143%;
+    color: $color-2;
+
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+
+  &__descr-text {
+    line-height: 143%;
+    letter-spacing: 0.2px;
+
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__descr-item {
+    display: flex;
+
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__descr-img {
+    flex: 0 0 32px;
+
+    & img{
+      width: 100%;
+    }
+  }
+
+  &__descr-box {
+    flex:  1 1 auto;
+    padding-left: 20px;
+  }
+
+  &__descr-link {
+    display: block;
+  }
+
+  &__descr-subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: $color-2;
+
+    &:not(:last-child){
+      margin-bottom: 5px;
+    }
+  }
+
+  &__descr-category {
+    font-weight: 600;
+    line-height: 171%;
+  }
+}
+
+.popup-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+
+  &__link {
+    display: inline-block;
+    transition: all .6s;
+
+    &:hover {
+      transform: scale(.8);
+    }
+
+    & rect,
+    & path{
+      transition: all .5s;
+    }
+
+    &:hover rect{
+      fill: rgba(13, 92, 99, .5);
+    }
+
+    &:hover path{
+      fill: $color-4;
+    }
+  }
+}
+// =======================
+@media (max-width: 950px) {
+  .whoweare{
+    padding-bottom: 30px;
+  }
+  .whoweare__content-box:not(:last-child){
+    margin-bottom: 30px;
+  }
+  .whoweare__inner{
+    flex-wrap: wrap;
+  }
+
+  .whoweare__descr{
+    flex: 1 1 100%;
+    padding-left: 0;
+  }
+  .popup-video{
+    flex: 1 1 100%;
+    height: 400px;
+  }
+  .whoweare__video-popup{
+    background-position: center;
+
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 479.98px){
+  .popup-video{
+    height: 250px;
+  }
+}

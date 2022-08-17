@@ -1,0 +1,98 @@
+.pactice {
+  padding-bottom: 80px;
+  margin: 0 auto;
+
+  &__content-box:not(:last-child) {
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+
+  &__items {
+    display: flex;
+    margin: 0 -17px;
+  }
+
+  &__item {
+    flex: 0 1 25%;
+    padding: 0 17px;
+    transition: all .5s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  &__card {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: $color-3;
+  }
+
+  &__card-text {
+    padding: 30px 30px 0 30px;
+
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: $color-2;
+
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+
+  &__card-descr {
+    line-height: 143%;
+  }
+
+  &__card-link {
+    display: inline-block;
+    max-width: 100%;
+
+    & img{
+      width: 100%;
+    }
+  }
+}
+// ===================
+@media (max-width: 991.98px) {
+  .pactice{
+    padding-bottom: 10px;
+  }
+  .pactice__items{
+    flex-wrap: wrap;
+  }
+  .pactice__item{
+    flex: 0 1 50%;
+    margin-bottom: 30px;
+    }
+    .pactice__card-text{
+      padding-top: 10px;
+
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @media (max-width: 767.98px){
+    .pactice__content-box:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .pactice__item{
+      flex: 1 1 100%;
+      margin-bottom: 30px;
+      }
+      .pactice__card{
+        border-radius: 36px;
+      }
+  }
+ 
